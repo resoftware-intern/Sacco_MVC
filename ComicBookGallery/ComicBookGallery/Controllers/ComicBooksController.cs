@@ -24,6 +24,14 @@ namespace ComicBookGallery.Controllers
             };
             */
 
+            //Dit zijn nu property's van een dynamic viewbag. Deze kunnen nu opgevraagd worden door de view!!!
+            ViewBag.Test1 = "hoi sacco";
+            ViewBag.Namen = new string[] { "Sacco", "Jordi", "Trevi" };
+
+
+
+
+
             //Een view returnen!!!
             return View();
 

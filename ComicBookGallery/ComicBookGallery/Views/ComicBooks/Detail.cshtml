@@ -1,5 +1,6 @@
 ﻿@{
     Layout = null;
+    //Dit hoort dus eigenlijk in de controller thuis! Hiervoor gebruiken we een ViewBag(dynamic object);
 }
 
 <!DOCTYPE html>
@@ -11,7 +12,16 @@
 </head>
 <body>
     <div>
-        <h1>Hello from our view</h1>
+        <h1>@ViewBag.Test1</h1>
+        <h5>Namen:</h5>
+        <div>
+            <ul>
+                @foreach(var n in ViewBag.Namen)
+                {
+                    <li>@n</li>
+                }
+            </ul>
+        </div>
     </div>
 </body>
 </html>
