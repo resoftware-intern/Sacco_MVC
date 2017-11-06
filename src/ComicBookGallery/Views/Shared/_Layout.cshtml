@@ -26,19 +26,16 @@
             </div>
         </div>
     </div>
-    
-    
-    <!-- Back button om terug te keren naar hoofdmenu-->
-    @if(ViewBag.ShowBackBar != null && ViewBag.ShowBackBar)
+
+    @if (ViewBag.ShowBackBar != null && ViewBag.ShowBackBar)
     {
-    <div class="backbar">
-        <div class="container">
-            @Html.ActionLink("Return to Home","Index",null,new {@class =  "btn btn-default" })
+        <div class="backbar">
+            <div class="container">
+                @Html.ActionLink("Return to List", "Index",
+                    null, new { @class = "btn btn-default" })
+            </div>
         </div>
-    </div>
     }
-
-
 
     <div class="container body-content">
         @RenderBody()
